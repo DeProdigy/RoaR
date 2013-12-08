@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/mongomapper/mongomapper.git
+  revision: 9b87dee507802a8cb96f2d316802c9fd241448c8
+  tag: v0.13.0.beta2
+  specs:
+    mongo_mapper (0.13.0.beta2)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0)
+      mongo (~> 1.8)
+      plucky (~> 0.6.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +47,9 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bson (1.9.2)
+    bson_ext (1.9.2)
+      bson (~> 1.9.2)
     builder (3.1.4)
     callsite (0.0.11)
     choice (0.1.6)
@@ -76,8 +90,12 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     minitest (4.7.5)
+    mongo (1.9.2)
+      bson (~> 1.9.2)
     multi_json (1.8.2)
     pg (0.17.0)
+    plucky (0.6.6)
+      mongo (~> 1.5)
     polyglot (0.3.3)
     pry (0.9.12.4)
       coderay (~> 1.0)
@@ -160,10 +178,12 @@ DEPENDENCIES
   awesome_print
   better_errors
   binding_of_caller
+  bson_ext
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
   meta_request
+  mongo_mapper!
   pg
   pry-debugger
   pry-rails
